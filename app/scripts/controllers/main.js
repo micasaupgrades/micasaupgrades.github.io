@@ -9,8 +9,8 @@
  */
 angular.module('micasaupgradesApp')
     .controller('MainCtrl', function($scope) {
-        console.log("Main Controller reporting for duty.");
-                analytics.page({
+        //console.log("Main Controller reporting for duty.");
+        analytics.page({
             title: 'Home',
             url: 'http://www.micasaupgrades.com',
             path: '/'
