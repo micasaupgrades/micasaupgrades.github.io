@@ -34,13 +34,16 @@ var app = angular
     });
 
 app.controller('ModalCtrl', function($scope) {
+    console.log("Modal Controller reporting for duty.");
     $scope.showModal = false;
     $scope.toggleModal = function() {
+        console.log("Toggle Modal");
         $scope.showModal = !$scope.showModal;
     };
 });
 
 app.directive('modal', function() {
+    console.log("modal directive loaded");
     return {
         template: '<div class="modal fade">' +
             '<div class="modal-dialog">' +
