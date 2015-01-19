@@ -176,7 +176,8 @@ margin-bottom: 0px;
  * Contact
  */
 
-.contact, .about {
+
+.contact, .signin {
     padding-top: 30px;
 }
 
@@ -214,8 +215,8 @@ margin-bottom: 0px;
  * About
  */
 .about img {
-    height: 525px;
-    width: 500px;
+    height: 475px;
+    width: 450px;
 
 }
 
@@ -298,7 +299,7 @@ margin-bottom: 0px;
         font-size: 30px;
     }
     .featurette-heading {
-        font-size: 50px;
+        font-size: 24px;
     }
 }
 @media all and (max-device-width: 640px) {

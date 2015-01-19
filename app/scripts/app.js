@@ -27,6 +27,10 @@ var app = angular
                 templateUrl: 'views/contact.html',
                 controller: 'ContactCtrl'
             })
+            .when('/signin', {
+                templateUrl: 'views/signin.html',
+                controller: 'SignInCtrl'
+            })
             .when('/about', {
                 templateUrl: 'views/about.html',
                 controller: 'AboutCtrl'
