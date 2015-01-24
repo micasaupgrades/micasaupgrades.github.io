@@ -105,7 +105,7 @@ h3 {
     font-size: 20px;
 }
 .jumbotron {
-    background: url(/images/kitchen.jpg) no-repeat center center fixed;
+    background: url(/images/kitchen.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -161,7 +161,7 @@ h3 {
     color: #2090cf;
 }
 .my-text {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .my-fancy-container {
     display: inline-block;
@@ -267,6 +267,7 @@ h3 {
         width: 100%;
         /* Must be percentage or pixels for horizontal alignment */
     }
+
 }
 @media (min-width: 992px) {
     .cover-container {
@@ -276,12 +277,19 @@ h3 {
         margin-top: 20px;
     }
 }
-@media all and (max-device-width: 720px) {
+
+
+
+
+@media all and (max-device-width: 1024px) {
     h1 {
         font-size: 30px;
     }
     .featurette-heading {
         font-size: 24px;
+    }
+        .my-text {
+        font-size: 1em;
     }
 }
 @media all and (max-device-width: 640px) {
