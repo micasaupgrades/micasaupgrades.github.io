@@ -8,26 +8,25 @@ body {
     width: 100%;
     height: 100%;
 }
-
 .wrapper {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+    margin: 0 auto -50px;
+    /* the bottom margin is the negative value of the footer's height */
 }
-.footer, .push {
-    height: 50px; /* .push must be the same height as .footer */
-}
-
+.footer,
 .push {
-    height: 100px; /* .push must be the same height as .footer */
+    height: 50px;
+    /* .push must be the same height as .footer */
 }
-
+.push {
+    height: 100px;
+    /* .push must be the same height as .footer */
+}
 body > .container {
     padding-top: 30px;
 }
-
-
 /* Links */
 
 h1 {
@@ -36,11 +35,10 @@ h1 {
 h3 {
     font-size: 24px;
 }
-
 /* Header */
 
 #header-top {
-border-top: solid 5px #2090cf;
+    border-top: solid 5px #2090cf;
 }
 /* Navbar */
 
@@ -51,13 +49,11 @@ border-top: solid 5px #2090cf;
     padding-bottom: 5px;
     background-color: #f8f8f8;
 }
-
-.thumbnail{
+.thumbnail {
     border: 0px;
 }
-
 .navbar {
-margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 .navbar-nav {
     padding-top: 10px;
@@ -109,8 +105,12 @@ margin-bottom: 0px;
     font-size: 20px;
 }
 .jumbotron {
-    text-align: center;
+    background: url(/images/kitchen.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    text-align: center;
     height: 550px;
     color: white;
 }
@@ -155,32 +155,27 @@ margin-bottom: 0px;
     line-height: 1;
     letter-spacing: -1px;
 }
-
 .my-icon {
     vertical-align: middle;
     font-size: 4em;
     color: #2090cf;
 }
-
 .my-text {
     font-size: 1.5em;
 }
-
 .my-fancy-container {
     display: inline-block;
     margin: 30px;
     padding: 10px;
 }
-
 /*
  * Contact
  */
 
-
-.contact, .signin {
+.contact,
+.signin {
     padding-top: 30px;
 }
-
 /*
  * Error Message
  */
@@ -210,67 +205,54 @@ margin-bottom: 0px;
     padding: 10px 20px;
     font-weight: bold;
 }
-
 /*
  * About
  */
+
 .about img {
     height: 475px;
     width: 450px;
-
 }
-
 /* ###########################################
 # ----------------- FOOTER ------------------#
 ########################################### */
 /* FOOTER APPPLICATION start */
+
 #footer.application {
     background: #444;
 }
-
 #footer.application #footer-inner {
     color: #e7e7e7;
     padding: 10px 0 5px;
 }
-
 #footer.application #footer-inner h3 {
     font-size: 1.5em;
     color: #e7e7e7;
     margin-top: 1px;
     margin-bottom: 1px;
 }
-
 #footer.application #footer-inner li {
     font-size: 1em;
     line-height: 25px;
 }
-
 #footer.application #footer-inner a {
     color: #e7e7e7;
 }
-
 #footer.application #footer-inner a:hover {
     color: #2090cf;
 }
-
 #footer.application #footer-bottom {
     padding: 5px 0;
     border-top: solid 1px #373737;
 }
-
 #footer.application #footer-bottom p {
     font-size: 11px;
     text-align: right;
 }
-
-
 /* FOOTER APPPLICATION end */
-
-
 /* ###########################################
 # ----------------- FOOTER ------------------#
 ########################################### */
-
 /*
  * Affix and center
  */
