@@ -12,16 +12,16 @@
                         <div class="error-name"></div>
                         <div class="form-group">
 
-                            <input parsley-validate-input type="text" name="name" data-ng-model="name" class="form-control" placeholder="Full Name" data-parsley-required-message="A valid email is required." required />
+                            <input parsley-validate-input type="text" name="name" data-ng-model="name" class="form-control" placeholder="*Full Name" data-parsley-required-message="A valid name is required." required />
 
                         </div>
                         <div class="error-email"></div>
                         <div class="form-group">
-                            <input parsley-validate-input type="email" data-ng-model="email" class="form-control" id="email" placeholder="Email" data-parsley-required-message="A valid email is required." data-parsley-error-message="A valid email is required." required/>
+                            <input parsley-validate-input type="email" data-ng-model="email" class="form-control" id="email" placeholder="*Email" data-parsley-required-message="A valid email is required." data-parsley-error-message="A valid email is required." required/>
                         </div>
                         <div class="error-company"></div>
                         <div class="form-group">
-                            <input parsley-validate-input type="text" data-ng-model="company" class="form-control" id="company" placeholder="Company" data-parsley-required-message="Company is required." required/>
+                            <input parsley-validate-input type="text" data-ng-model="company" class="form-control" id="company" placeholder="*Company" data-parsley-required-message="Company is required." required/>
                         </div>
                         <div class="form-group">
                             <input parsley-validate-input type="text" data-ng-model="phone" class="form-control" id="phone" placeholder="Phone Number" />
@@ -29,7 +29,7 @@
                         <div class="form-group">
                             <textarea rows="10" cols="100" class="form-control" data-ng-model="message" id="message" maxlength="999" style="resize:none" placeholder="Message"></textarea>
                         </div>
-                        <button type="submit" data-ng-disabled="progress.active()" data-ng-click="submit(contactForm)" class="btn btn-md button-blue">Contact</button>
+                        <button type="submit" data-ng-disabled="progress.active()" data-ng-click="submit(contactForm)" class="btn btn-md button-blue">Contact</button> *required fields
                     </form>
                 </div>
             </div>
