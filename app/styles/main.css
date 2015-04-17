@@ -35,6 +35,23 @@ h1 {
 h3 {
     font-size: 24px;
 }
+
+p, li {
+    font-size: 1.1em;
+}
+
+.page-header {
+    color: #2090cf;
+    font-weight: normal;
+    font-size: 38px;
+}
+
+.page-sub-header {
+    font-weight: normal;
+    font-size: 32px;
+}
+
+
 /* Header */
 
 #header-top {

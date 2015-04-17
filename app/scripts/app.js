@@ -10,40 +10,62 @@
  */
 var app = angular
     .module('micasaupgradesApp', [
-        'ngRoute',
+        'ui.router',
         'ngTouch',
         'parse-angular',
         'ajoslin.promise-tracker',
         'duScroll'
 
     ])
-    .config(function($routeProvider) {
-        $routeProvider
-            .when('/', {
+    .config(function($stateProvider, $urlRouterProvider) {
+
+        $urlRouterProvider.otherwise('/#');
+
+        $stateProvider
+            .state('#', {
                 templateUrl: 'views/main.html',
+                url: '/',
                 controller: 'MainCtrl'
             })
-            .when('/contact', {
+            .state('jobs', {
+                templateUrl: 'views/jobs.html',
+                url: '/jobs',
+                controller: 'JobsCtrl'
+            })
+            .state('sales-associate', {
+                templateUrl: 'views/sales-associate.html',
+                url: '/jobs/sales-associate'
+            })
+            .state('success-member', {
+                templateUrl: 'views/success-member.html',
+                url: '/jobs/success-member'
+            })
+            .state('full-stack-engineer', {
+                templateUrl: 'views/full-stack-engineer.html',
+                url: '/jobs/full-stack-engineer'
+            })
+            .state('contact', {
                 templateUrl: 'views/contact.html',
+                url: '/contact',
                 controller: 'ContactCtrl'
             })
-            .when('/signin', {
+            .state('signin', {
                 templateUrl: 'views/signin.html',
+                url: '/signin',
                 controller: 'SigninCtrl'
             })
-            .when('/about', {
+            .state('about', {
                 templateUrl: 'views/about.html',
+                url: '/about',
                 controller: 'AboutCtrl'
             });
     });
 
-app.run(function($rootScope, $location, $anchorScroll, $routeParams) {
-    $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
-        $location.hash($routeParams.scrollTo);
-        $anchorScroll();
+angular.module('micasaupgradesApp').run(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
+    $rootScope.$on("$locationChangeSuccess", function() {
+                $anchorScroll();
     });
-})
-
+}]);
 
 app.directive('parsleyValidateInput', function($timeout) {
     return {

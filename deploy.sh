@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# must use ssh URL
+# git remote set-url origin git@github.com:micasaupgrades/micasaupgrades.github.io.git
 echo "ssh github"
 ssh -T git@github.com
 
@@ -16,8 +18,7 @@ git push origin src
 echo "deploy to master"
 git subtree push --prefix dist origin master
 
-echo "go back to dev branch"
-git checkout development 
+echo "done!"
 
 
 
