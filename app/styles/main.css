@@ -211,6 +211,17 @@ p, li {
     margin: 36px 0;
     text-align: center;
 }
+
+#features .headingwrap2 a {
+    color: #2090cf;
+    text-decoration: none;
+
+}
+
+#features .headingwrap2 a:hover {
+    color: #337ab7;
+}
+
 /*
  * Cover
  */
