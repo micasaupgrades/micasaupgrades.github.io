@@ -32,6 +32,10 @@ var app = angular
                 url: '/jobs',
                 controller: 'JobsCtrl'
             })
+            .state('business-development-associate', {
+                templateUrl: 'views/business-development-associate.html',
+                url: '/jobs/business-development-associate'
+            })
             .state('sales-associate', {
                 templateUrl: 'views/sales-associate.html',
                 url: '/jobs/sales-associate'
