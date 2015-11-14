@@ -16,11 +16,14 @@ angular.module('micasaupgradesApp')
             // Trigger validation flag.
             $scope.submitted = true;
 
+
             // If form is invalid, return and let AngularJS show validation errors.
             if (form.$invalid) {
                 return;
             }
-
+            
+            $scope.hideform = true; 
+            
             // Default values for the request.
             var data = {
 
@@ -39,7 +42,7 @@ angular.module('micasaupgradesApp')
                     $scope.company = null;
                     $scope.phone = null;
                     $scope.message = null;
-                    $scope.messages = 'Information sent. Thank you for contacting us.';
+                    $scope.messages = 'Thank you for your interest in MiCasa.  We will be in touch with you shortly.';
                     $scope.submitted = false;
 
 
